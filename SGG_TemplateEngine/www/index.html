@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="/xuni/bundle.js"></script>
+    <script>
+            let templateStr = '请叫我Thunder{{name}},也可以叫我{{name}}征'
+            let data ={
+                name:'chen'
+            }
+        SSG_TemplateEngine.render(templateStr,data)
+    </script>
+</body>
+</html>
