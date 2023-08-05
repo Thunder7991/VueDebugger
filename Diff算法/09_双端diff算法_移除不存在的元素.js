@@ -28,7 +28,7 @@ function patchKeyedChildren(n1, n2, container) {
     if (!oldStartVnode) {
       oldStartVnode = oldChildren[++oldStartIdx];
     } else if (!oldEndVnode) {
-      oldEndVnode = newChildren[--oldEndVnode];
+      oldEndVnode = oldChildren[--oldEndVnode];
     } else if (oldStartVnode.key === newStartVnode.key) {
       //第一步
       //只需要补丁
